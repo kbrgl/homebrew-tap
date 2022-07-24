@@ -5,21 +5,21 @@
 class Gameover < Formula
   desc "Play text-based games right in your terminal."
   homepage ""
-  version "0.0.1"
+  version "0.0.2"
   license "GPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kbrgl/gameover/releases/download/v0.0.1/gameover_0.0.1_darwin_arm64.tar.gz"
-      sha256 "c96fe3de4e35e4218eda6613e6789b306a1c9823e2f3d5ab6a16452df2106a5b"
+      url "https://github.com/kbrgl/gameover/releases/download/v0.0.2/gameover_0.0.2_darwin_arm64.tar.gz"
+      sha256 "c3a8d109f884af4c27e4b5a4a0be17e106181a3787f74c3c4caa41fdf4e96f96"
 
       def install
         bin.install "gameover"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kbrgl/gameover/releases/download/v0.0.1/gameover_0.0.1_darwin_amd64.tar.gz"
-      sha256 "92f824dff94c7ea3763b469f10b5bb8cddd56835cc21b435136f7f6deba6c00e"
+      url "https://github.com/kbrgl/gameover/releases/download/v0.0.2/gameover_0.0.2_darwin_amd64.tar.gz"
+      sha256 "1f9adffc9997ee5fa174f60c33d3029e8f3ee9938ff4fa5d0e7429eed55a1598"
 
       def install
         bin.install "gameover"
@@ -29,16 +29,16 @@ class Gameover < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kbrgl/gameover/releases/download/v0.0.1/gameover_0.0.1_linux_arm64.tar.gz"
-      sha256 "1e5504dad85accedfbe13f498d896c20da2ab2352bc9629eb783310c92cbe0c3"
+      url "https://github.com/kbrgl/gameover/releases/download/v0.0.2/gameover_0.0.2_linux_arm64.tar.gz"
+      sha256 "a4cdc7ef73b71f0ee2c4a657185768b996b01405f4994725028b1e980db7453c"
 
       def install
         bin.install "gameover"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kbrgl/gameover/releases/download/v0.0.1/gameover_0.0.1_linux_amd64.tar.gz"
-      sha256 "f1abebccc24966194b596e408e59a6863686597ae32acea6762868be793389e2"
+      url "https://github.com/kbrgl/gameover/releases/download/v0.0.2/gameover_0.0.2_linux_amd64.tar.gz"
+      sha256 "4a685b0456a2c3f713378a77ca12fa46bdab302b0cf74c3ba0231b8ca5c62840"
 
       def install
         bin.install "gameover"
